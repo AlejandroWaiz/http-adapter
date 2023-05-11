@@ -1,20 +1,22 @@
-const {GetDBConn} = require("./utils")
+const { GetDBConn } = require("./utils")
 
 const db = GetDBConn()
 
- ;
+    ;
 
-exports.SavePokemon = async function (pokemon) {
+exports.SavePokemon = async function (pokemons) {
 
     try {
 
-        console.log(pokemon)
+        pokemons.forEach(function(pokemon)  {
 
-        db.collection("pokemons").doc(pokemon.pokemonID).set({
-           ...pokemon
-        })
+            console.log(pokemon)
 
-        console.log("saved succesfully")
+            db.collection("pokemons").doc(pokemon.ID).set({
+                ...pokemon
+            })
+
+        });
 
         return "saved succesfully"
 

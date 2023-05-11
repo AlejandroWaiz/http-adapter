@@ -16,14 +16,9 @@ class Pokemon {
 
 exports.SavePokemon = function (pokemonData) {
 
-    let pokemon = undefined;
-
     try {
-        pokemon = new Pokemon(pokemonData)
 
-        console.log('this is the pokemon', pokemon)
-
-        const msg = SavePokemon(pokemon)
+        const msg = SavePokemon(pokemonData)
 
         return msg
 
