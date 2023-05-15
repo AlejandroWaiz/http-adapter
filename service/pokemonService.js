@@ -2,6 +2,8 @@
 
 const { SavePokemons } = require("../model/savePokemon")
 
+//Removed unused class 'Pokemon'
+
 exports.SavePokemons = function (pokemonData) {
 
     try {
