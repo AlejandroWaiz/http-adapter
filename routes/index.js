@@ -2,12 +2,14 @@ const routes = require('express').Router();
 const healthcheck = require('../controller/healthcheck');
 const { postPokemon } = require("../controller/postPokemon")
 const { getPokemons } = require("../controller/getPokemons")
+const {getPokemon} = require("../controller/getPokemon")
 
 
 routes.get("/healthcheck", healthcheck)
 
 routes.post("/save", postPokemon)
 routes.get("/read/all", getPokemons)
+routes.get("/read/:id", getPokemon)
 
 const appRoutes = (api) => {
     api.use("/", routes);
