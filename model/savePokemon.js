@@ -4,7 +4,7 @@ const db = GetDBConn()
 
     ;
 
-exports.SavePokemon = async function (pokemons) {
+exports.SavePokemons = async function (pokemons) {
 
     try {
 

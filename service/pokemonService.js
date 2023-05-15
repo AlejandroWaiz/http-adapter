@@ -1,24 +1,12 @@
 'use strict';
 
-const { SavePokemon } = require("../model/savePokemon")
+const { SavePokemons } = require("../model/savePokemon")
 
-class Pokemon {
-    constructor(data) {
-
-        this.pokemonID = data.ID
-        this.pokemonName = data.Name
-        this.pokemonTypes = data.Types
-        this.pokemonCanEvolve = data.HasEvolution
-
-
-    }
-}
-
-exports.SavePokemon = function (pokemonData) {
+exports.SavePokemons = function (pokemonData) {
 
     try {
 
-        const msg = SavePokemon(pokemonData)
+        const msg = SavePokemons(pokemonData)
 
         return msg
 
