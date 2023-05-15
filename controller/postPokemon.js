@@ -1,4 +1,4 @@
-const {SavePokemons} = require("../service/pokemonService")
+const {SavePokemons} = require("../service/savePokemon")
 
 exports.postPokemon = async function(req, res) {
 

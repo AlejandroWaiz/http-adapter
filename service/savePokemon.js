@@ -1,6 +1,6 @@
 'use strict';
 
-const { SavePokemons } = require("../model/savePokemon")
+const { SavePokemons } = require("../model/savePokemons")
 
 //Removed unused class 'Pokemon'
 
