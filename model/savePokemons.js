@@ -1,6 +1,5 @@
 const { GetDBConn } = require("../config/firestore")
 
-
 const db = GetDBConn()
 
 exports.SavePokemons = async function (pokemons) {
@@ -8,6 +7,8 @@ exports.SavePokemons = async function (pokemons) {
     try {
 
         pokemons.forEach(function(pokemon)  {
+
+            console.log(pokemon)
 
             db.collection(process.env.FIRESTORE_COLLECTION).doc(pokemon.ID).set({
                 ...pokemon

@@ -1,7 +1,7 @@
 {
   "name": "http-adapter",
   "version": "1.0.0",
-  "description": "example of an http adapter of entry json to store it into some database",
+  "description": "Example of a CRUD api with Node.js and pokemons as data to store",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -14,7 +14,7 @@
   "author": "Alejandro Waiz",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.1.4",
     "express": "^4.18.2",
     "firebase-admin": "^11.8.0",
     "winston": "^3.8.2"
